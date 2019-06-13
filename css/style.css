@@ -53,6 +53,7 @@
 
 .navbar{
     transition: 0.5s;
+    max-height: 60px;
 }
 
 .nav-linka{
@@ -64,5 +65,16 @@
 }
 
 #background{
+    height: auto;
     width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.js-header-logo{
+    height: 85px;
+    width: auto;
 }

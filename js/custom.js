@@ -5,14 +5,14 @@ $(function() {
     var currentScroll = $(this).scrollTop();
     if (currentScroll > previousScroll) {
       if ($(".js-header-logo").height() > 30) {
-        $(".js-header-logo").css("height", a - currentScroll / 5);
+        $(".js-header-logo").css("height", a - currentScroll / 10);
       }
       if ($(".js-header-logo").height() < 30) {
         $(".js-header-logo").css("height", 30);
       }
     } else {
-      if ($(".js-header-logo").height() < 86 && currentScroll < 275) {
-        $(".js-header-logo").css("height", 30 + (275 - currentScroll) / 4);
+      if ($(".js-header-logo").height() < 86 && currentScroll < 550) {
+        $(".js-header-logo").css("height", 30 + (550 - currentScroll) / 10);
       }
       if ($(".js-header-logo").height() > 85) {
         $(".js-header-logo").css("height", 85);
