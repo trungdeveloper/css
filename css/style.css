@@ -70,7 +70,7 @@ section {
 
 #background {
   height: auto;
-  width: 100%;
+  width: 100vw;
   position: relative;
   display: block;
   margin: 0 auto;
@@ -94,11 +94,12 @@ h1 {
   color: #000;
   background-color: #fff;
   font-family: Genath, Times, serif;
-  font-weight: 500;
   line-height: 1;
   width: 77.07368%;
   margin-left: 11.46316%;
 }
+
+
 
 .fancy {
   line-height: 0;
@@ -106,7 +107,7 @@ h1 {
 }
 .fancy span {
   display: inline-block;
-  position: relative;  
+  position: relative;
   font-weight: bold;
   font-size: 25px;
 }
@@ -133,27 +134,81 @@ h1 {
   margin: 3em 0 3em 0;
 }
 
-div .sub{
+div .sub {
   overflow: hidden;
 }
 
-.space{
+.space {
   height: 30px;
 }
 
-.author{
+.author {
   text-decoration: none;
   color: gray;
   margin-left: 10px;
 }
 
-.author:hover{
+.author:hover {
   cursor: pointer;
   text-decoration: none;
   color: gray;
   margin-left: 10px;
 }
 
-.tab{
+.tab {
   margin-left: 10px;
+}
+
+.shift-img {
+  margin-left: 340px !important;
+}
+
+.titles, .titles:hover {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.ima{
+  height: 50px; width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    position: relative;
+    margin-top: -4.875rem;
+    font-size: 2.5rem;
+    color: #000;
+    background-color: #fff;
+    font-family: Genath, Times, serif;
+    line-height: 1;
+    width: 77.07368%;
+    margin-left: 11.46316%;
+  }
+  h2{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  .col-md-12{
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ima{
+    width: auto;
+  }
+  .js-header-logo{
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-linka{
+    display: none;
+  }
 }
