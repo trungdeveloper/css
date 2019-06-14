@@ -23,12 +23,14 @@ $(function() {
 
   $("#click").click(function() {
     $("#mySidenav").css("width", "340px");
-    $("#main").css("margin-left", "340px");
+    // $("#main").css("margin-left", "340px");
     $(".navbar").css("margin-left", "340px");
+    $("section").css("margin-left", "340px");
   });
   $(".closebtn").click(function() {
     $("#mySidenav").css("width", "0");
     $(".navbar").css("margin-left", "0");
-    $("#main").css("margin-left", "0");
+    // $("#main").css("margin-left", "0");
+    $("section").css("margin-left", "0");
   });
 });
