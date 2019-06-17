@@ -1,5 +1,7 @@
 $(function() {
-  if ($(document).width() > 1199) {
+  window.scrollTo(0, 0);
+  let size = $(document).width();
+  if (size > 1199) {
     let a = $(".js-header-logo").height();
     let previousScroll = 0;
     $(window).scroll(function() {
